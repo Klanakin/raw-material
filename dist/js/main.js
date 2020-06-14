@@ -49,8 +49,8 @@ class AppComponents extends RawMaterial {
         let inputField = document.getElementsByClassName("input__box--rawMtrPrice")[0];
         inputField.value = "";
         let outputField = document.getElementsByClassName("output__box--rawMtrPrice")[0];
-        outputField.innerHTML = "..and get your quote now.";
         outputField.style.color = "#C0C0C0)";
+        outputField.innerHTML = "..and get your quote now.";
     }
 }
 const btnGetQuote = document.getElementsByClassName("btn__submit--rawMtrPrice")[0];

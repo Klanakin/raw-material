@@ -25,7 +25,7 @@ class RawMaterial {
             for (let i = 0; i < quotient; i++) {
                 this.priceQuote += (this.priceRates[i] * 100);
             }
-            
+
             if (remainder != 0) {
                 this.priceQuote += (this.priceRates[quotient] * remainder);
             }
@@ -44,7 +44,7 @@ btnGetQuote.addEventListener("click", () => {
     }
     else {
         const inquiry = new RawMaterial(+inputBox.value);
-        outputBox.innerHTML = "The price is " + inquiry.getQuote() + ".";
+        outputBox.innerHTML = "The price for " +inputBox.value + " tons of raw material is " + inquiry.getQuote() + " THB.";
         outputBox.style.color = "#C0C0C0";
     }
     

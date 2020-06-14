@@ -25,10 +25,10 @@ class RawMaterial {
         }
     }
 }
+let inputBox = document.getElementsByClassName("input__box--rawMtrPrice")[0];
+let outputBox = document.getElementsByClassName("output__box--rawMtrPrice")[0];
 const btnGetQuote = document.getElementsByClassName("btn__submit--rawMtrPrice")[0];
 btnGetQuote.addEventListener("click", () => {
-    let inputBox = document.getElementsByClassName("input__box--rawMtrPrice")[0];
-    let outputBox = document.getElementsByClassName("output__box--rawMtrPrice")[0];
     if (+inputBox.value <= 0) {
         outputBox.innerText = "Please enter a proper weight.";
         outputBox.style.color = "red";
@@ -41,8 +41,6 @@ btnGetQuote.addEventListener("click", () => {
 });
 const btnClear = document.getElementsByClassName("btn__clear--rawMtrPrice")[0];
 btnClear.addEventListener("click", () => {
-    let inputBox = document.getElementsByClassName("input__box--rawMtrPrice")[0];
-    let outputBox = document.getElementsByClassName("output__box--rawMtrPrice")[0];
     inputBox.value = "";
     outputBox.innerText = "..and get your quote now.";
     outputBox.style.color = "#C0C0C0";

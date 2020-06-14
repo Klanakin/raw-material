@@ -33,10 +33,11 @@ class RawMaterial {
     }
 }
 
+let inputBox = document.getElementsByClassName("input__box--rawMtrPrice")[0]! as HTMLInputElement;
+let outputBox = document.getElementsByClassName("output__box--rawMtrPrice")[0]! as HTMLInputElement;
+
 const btnGetQuote = document.getElementsByClassName("btn__submit--rawMtrPrice")[0];
 btnGetQuote.addEventListener("click", () => {
-    let inputBox = document.getElementsByClassName("input__box--rawMtrPrice")[0]! as HTMLInputElement;
-    let outputBox = document.getElementsByClassName("output__box--rawMtrPrice")[0]! as HTMLInputElement;
 
     if (+inputBox.value <= 0) {
         outputBox.innerText = "Please enter a proper weight.";
@@ -47,14 +48,10 @@ btnGetQuote.addEventListener("click", () => {
         outputBox.innerHTML = "The price for " +inputBox.value + " tons of raw material is " + inquiry.getQuote() + " THB.";
         outputBox.style.color = "#C0C0C0";
     }
-    
-
 });
 
 const btnClear = document.getElementsByClassName("btn__clear--rawMtrPrice")[0];
 btnClear.addEventListener("click", () => {
-    let inputBox = document.getElementsByClassName("input__box--rawMtrPrice")[0]! as HTMLInputElement;
-    let outputBox = document.getElementsByClassName("output__box--rawMtrPrice")[0]! as HTMLInputElement;
 
     inputBox.value = "";
     outputBox.innerText = "..and get your quote now.";

@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+body {
+    background-color: #eee;
+    box-sizing: border-box;
+    color: $color-primary;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;}
+
+html {
+    font-size: 62.5%; }
+
+hr {
+    border-color: $color-grey-light-3;
+    border-style: none none dashed none;
+    border-width: .1rem;
+    margin: $margin-v-m auto; }
+
+input, select, textarea{
+    color: $color-primary-contrast; }
+
+textarea:focus, input:focus {
+    color: $color-primary-contrast;;
+    outline: none; }

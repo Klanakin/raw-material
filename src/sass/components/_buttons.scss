@@ -1,0 +1,36 @@
+.btn {
+    background-color: $color-secondary;
+    border-color: $color-secondary-tint;
+    // border-radius: 2rem;
+    border-style: none;
+    border-width: .1rem;
+    // box-shadow: .2rem .2rem .6rem rgba(0, 0, 0, .4);
+    color: darken($color-secondary-contrast,30%);
+    display: inline-block;
+    padding: .4rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s;
+
+    &:link,
+    &:visited {
+        font-size: small; }
+
+    &:hover {
+        box-shadow: .3rem .6rem .1rem rgba(0, 0, 0, .1);
+        color: $color-secondary-contrast;
+        transform: translateY(-.2rem); }
+
+    &:focus {
+        color: $color-secondary-contrast;
+        transform: translateY(-.15rem);
+        box-shadow: .25rem .45rem .1rem rgba(0, 0, 0, .2);
+        outline: none; }
+    
+    &:active {
+        transform: translateY(0);
+        box-shadow: .1rem .2rem .1rem rgba(0, 0, 0, .4); } 
+    
+    
+
+     }

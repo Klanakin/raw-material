@@ -1,0 +1,44 @@
+.input__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &--rawMtrPrice {
+        background-color: $color-white;
+        border-color: $color-grey-light-2;
+        // border-radius: 2rem;
+        border-style: solid;
+        border-width: .1rem;
+        // box-shadow: .1rem .1rem .1rem rgba(255,255,255, .9),
+        //     .1rem .1rem .1rem rgba(0, 0, 0, .1);
+        flex-grow: 3;
+        margin-right: $margin-right-xxs; 
+        padding: .4rem 1.2rem; }
+    
+    .btn__submit {
+        &--rawMtrPrice {
+            flex-grow: 1;
+            width: 8rem; } } }
+
+@media only screen and (min-width: 650px)  {
+    .input__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        &--rawMtrPrice {
+            background-color: $color-white;
+            border-color: $color-grey-light-2;
+            // border-radius: 2rem;
+            border-style: solid;
+            border-width: .1rem;
+            // box-shadow: .1rem .1rem .1rem rgba(255,255,255, .9),
+            //     .1rem .1rem .1rem rgba(0, 0, 0, .1);
+            flex-grow: 3;
+            margin-right: $margin-right-xxs; 
+            padding: .4rem 1.2rem; }
+        
+        .btn__submit {
+            &--rawMtrPrice {
+                flex-grow: 1;
+                width: 8rem; } } } }

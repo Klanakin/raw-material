@@ -1,0 +1,23 @@
+.navbar {
+    background-color: $color-secondary;
+    margin-bottom: $margin-bottom-xl;
+    padding: .5rem; }
+
+.stage__primary {
+    margin: 0 auto;
+    max-width: $column-width-mobile;
+    vertical-align: baseline; 
+    
+    &--rawMtrPrice {
+        display: flex;
+        flex-direction: column; } }
+
+@media only screen and (min-width: 650px)  {
+    .stage__primary {
+        margin: 0 auto;
+        max-width: $column-width;
+        vertical-align: baseline; 
+    
+        &--rawMtrPrice {
+            display: flex;
+            flex-direction: column; } } }

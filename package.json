@@ -1,0 +1,25 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass ./src/sass/main.scss ./dist/css/style.css -w",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Klanakin/DK-template.git"
+  },
+  "author": "Don Klanakin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Klanakin/DK-template/issues"
+  },
+  "homepage": "https://github.com/Klanakin/DK-template#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1"
+  }
+}

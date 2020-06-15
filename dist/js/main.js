@@ -10,12 +10,12 @@ class RawMaterial {
         return this.priceQuote;
     }
     calcPrice() {
-        let quotient = Math.floor(this.weight / 100);
-        let remainder = this.weight % 100;
         if (this.weight <= 0) {
             this.priceQuote = -1;
         }
         else {
+            let quotient = Math.floor(this.weight / 100);
+            let remainder = this.weight % 100;
             for (let i = 0; i < quotient; i++) {
                 this.priceQuote += (this.priceRates[i] * 100);
             }

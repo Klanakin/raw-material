@@ -16,11 +16,24 @@ class RawMaterial {
         else {
             let quotient = Math.floor(this.weight / 100);
             let remainder = this.weight % 100;
-            for (let i = 0; i < quotient; i++) {
-                this.priceQuote += (this.priceRates[i] * 100);
+            if (quotient < 4) {
+                for (let i = 0; i < quotient; i++) {
+                    this.priceQuote += (this.priceRates[i] * 100);
+                }
+                if (remainder != 0) {
+                    this.priceQuote += (this.priceRates[quotient] * remainder);
+                }
             }
-            if (remainder != 0) {
-                this.priceQuote += (this.priceRates[quotient] * remainder);
+            else {
+                for (let i = 0; i < 4; i++) {
+                    this.priceQuote += (this.priceRates[i] * 100);
+                }
+                for (let i = 4; i < quotient; i++) {
+                    this.priceQuote += (this.priceRates[4] * 100);
+                }
+                if (remainder != 0) {
+                    this.priceQuote += (this.priceRates[4] * remainder);
+                }
             }
         }
     }

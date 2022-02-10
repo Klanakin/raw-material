@@ -20,6 +20,6 @@
   "homepage": "https://github.com/Klanakin/DK-template#readme",
   "devDependencies": {
     "lite-server": "^2.5.4",
-    "node-sass": "^4.14.1"
+    "node-sass": "^7.0.0"
   }
 }
